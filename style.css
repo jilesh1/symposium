@@ -1,13 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
+
 }
 
 body{
-    background-color: rgba(1, 17, 32);
-    font-family: Arial, sans-serif;
+    background-color:#011120;
 }
 .white{
     height: 30px;
@@ -26,7 +27,7 @@ body{
     padding: 15px;
 }
 .navbar.scrolled{
-    background-color: #0f2235;
+    background-color: #113151;
     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
@@ -43,37 +44,64 @@ body{
     font-size: 18px;
 }
 
+.list ul li a:hover{
+   color: #1e66f5;
+}
+
 .buttons{
     display: flex;
     gap: 10px;
 }
 
+.SignUp{
+  position: relative;
+  padding: 12px 30px;
+  background-color: #1e66f5;
+  border: 2px solid #1e66f5;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+}
+.SignUp::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #011120;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease;
+  z-index: -1;
+}
+.SignUp:hover::before{ transform: translateY(0); }
+.SignUp:hover{ color: #1e66f5; }
 
 .SignIn{
-    padding: 8px 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: transparent;
-    color: #067df3;
-    border: 1px solid #067df3 ;
-    cursor: pointer;
+  position: relative;
+  padding: 12px 30px;
+  background-color: #011120;
+  border: 2px solid #1e66f5;
+  color: #1e66f5;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
 }
-.SignUp{
-    padding: 8px 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: #067df3;
-    color: #ffffff;
-    cursor: pointer;
+.SignIn::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #1e66f5;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease;
+  z-index: -1;
 }
-.SignIn:hover{
-    background-color: #067df3;
-    color: white;
-}
-.SignUp:hover{
-    background-color: transparent;
-    color: #067df3;
-}
+.SignIn:hover::before{ transform: translateY(0); }
+.SignIn:hover{ color: white; }
 
 
 
@@ -443,4 +471,140 @@ hr {
     height: 90px;
 }
 
+}
+
+/* CONTACT US SECTION SLYLING */
+
+/* CONTACT US SECTION */
+.mainone{
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 70px 0 40px; /* ✅ only vertical spacing */
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.onefirst h1{
+  color: #fff;
+  font-size: 64px; /* closer to reference */
+  margin-bottom: 18px;
+}
+
+.onefirst p{
+  color: #43617c;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.8;
+  max-width: 640px;
+}
+
+.onesecond{
+  justify-self: end;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.onesecond a{
+  text-decoration: none;
+  color: #43617c;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.onesecond a:hover{ text-decoration: underline; }
+
+.onesecond .arrow{ color: #fff; }
+.onesecond .active{ color: #fff; font-weight: 500; }
+
+/* EMAIL / CAREER SECTION */
+.Email_Career_Section{
+  
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+  padding-bottom: 80px;
+}
+
+.Card{
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 24px;
+  align-items: start;
+  margin-left: 1.5rem;
+}
+
+/* ✅ icon circle like reference */
+.Images{
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #0b2f4d;
+  display: grid;
+  place-items: center;
+}
+
+
+/* typography like reference */
+.Contant h1{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.Contant p{
+  color: #43617c;
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  max-width: 420px;
+}
+
+.Contant a{
+  color: #1e66f5;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Contant a span{
+  transition: transform 0.3s ease;
+}
+
+.Contant a:hover{
+  color: #fff;
+}
+.Contant a:hover span{
+  transform: translateX(6px);
+}
+
+/* HR */
+.custom-line{
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 60px 0;
+}
+
+/* MAP (you said ignore alignment, still making it responsive) */
+.map_box{
+  margin-top: 40px;
+  width: min(1200px, 100%);
+  margin: 0 auto 80px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.map_box iframe{
+  width: 100%;
+  height: 600px;
+  display: block;
+  border: 0;
 }

@@ -4,9 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
+        <nav class="navbar">
+
+   
+    <div>
+        <img src="asset/footer-logo-white.svg" alt="logo">
+    </div>
+
+ 
+   
+
+   
+    <div class="list">
+        <ul>
+            <li><a href="#">HomePage</a></li>
+            <li><a href="#">Schedules</a></li>
+            <li><a href="#">Speaker</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+             <li><a href="#">Documentation</a></li>
+        </ul>
+    </div>
+
+   <img class="white" src="asset/white.svg" alt="--">
+    <div class="hamburger" onclick="openMenu()">☰</div>
+    <div class="buttons">
+        
+        <button class="SignIn">Sign In</button>
+        <button class="SignUp">Sign Up</button>
+    </div>
+
+</nav>
+
+<script>
+function openMenu(){
+    document.querySelector(".list").classList.add("active");
+    document.querySelector(".buttons").classList.add("active");
+    document.querySelector(".overlay").classList.add("active");
+}
+
+function closeMenu(){
+    document.querySelector(".list").classList.remove("active");
+    document.querySelector(".buttons").classList.remove("active");
+    document.querySelector(".overlay").classList.remove("active");
+}
+
+window.addEventListener("scroll", function(){
+
+    const navbar = document.querySelector(".navbar");
+
+    if(window.scrollY > 50){
+        navbar.classList.add("scrolled");
+    }else{
+        navbar.classList.remove("scrolled");
+    }
+
+});
+
+</script>
          <!-- CONTACT US SECTION -->
       <div class="mainone">
         <div class="onefirst">
@@ -27,7 +89,7 @@
       <div class="Email_Career_Section">
         <div class="Card">
           <div class="Images">
-            <img src="./imgs/mailweb.png" alt="">
+            <img src="./asset/mailweb.png" alt="">
           </div>
           <div class="Contant">
             <h1>Email Us</h1>
@@ -38,7 +100,7 @@
 
         <div class="Card">
           <div class="Images">
-            <img src="./imgs/carrerssweb.png" alt="">
+            <img src="./asset/carrerssweb.png" alt="">
           </div>
           <div class="Contant">
             <h1>Careers</h1>
@@ -66,5 +128,46 @@
     
  
     </main>
+
+    <footer>
+    <div class="footertop">
+        <img class="ticket" src="asset/ticket.png" alt="logo">
+
+        <div class="footert">
+            <h1>Become a Part of the Digital Evolution!</h1>
+            <button>Book ticket</button>
+        </div>
+    </div>
+    <div style="background-color: #0f2235;">
+<div class="MainFooter">
+         
+    <img  src="asset/footer-logo-white.svg" alt="logo">
+    <div class="footerlist">
+        <ul>
+            <li><a href="#">HomePage</a></li>
+            <li><a href="#">Schedules</a></li>
+            <li><a href="#">Speaker</a></li>
+             <li><a href="#">Speaker</a></li>
+            
+        </ul>
+    </div>
+    <div >
+        <img src="asset/1.svg" alt="logo">
+        <img src="asset/2.svg" alt="logo">
+        <img src="asset/3.svg" alt="logo">
+    </div>
+  
+ </div>
+ <hr>
+ <div  class="footerend">
+    <div><p>© All rights reserved. Made by HTML/CSS Templates Distributed by Jilesh Yadav</p></div>
+    <div class="footersubs">
+        <div><h3>Subscribe Newsletter</h3></div>
+        <div><input type="email" placeholder="Email Address*"> <button>Click</button></div>
+        
+    </div>
+</div>
+ </div>
+</footer>
 </body>
 </html>
