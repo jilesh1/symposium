@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Symposium Contact Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,6 @@
 <body>
     <main>
         <nav class="navbar">
-  <h1>jil</h1>
    
     <div>
         <img src="asset/footer-logo-white.svg" alt="logo">
@@ -27,7 +26,13 @@
             <li><a href="#">HomePage</a></li>
             <li><a href="#">Schedules</a></li>
             <li><a href="#">Speaker</a></li>
-            <li><a href="#">Blog</a></li>
+            <li class="dropdown">
+            <a href="#">Blog <span class="caret">▼</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Blog list</a></li>
+              <li><a href="#">Blog details</a></li>
+            </ul>
+          </li>
             <li><a href="#">Contact</a></li>
              <li><a href="#">Documentation</a></li>
         </ul>
@@ -69,49 +74,53 @@ window.addEventListener("scroll", function(){
 });
 
 </script>
-         <!-- CONTACT US SECTION -->
-      <div class="mainone">
-        <div class="onefirst">
-          <h1>Contact Us</h1>
-          <p>
-            Discover a wealth of insightful materials meticulously crafted to provide you with a comprehensive understanding of the latest trends.
-          </p>
-        </div>
+         
+     <section class="contact-block">
+  <div class="container">
 
-        <div class="onesecond">
-          <a href="#">Home</a>
-          <span class="arrow">›</span>
-          <span class="active">Contact</span>
+    <!-- CONTACT US SECTION -->
+    <div class="mainone">
+      <div class="onefirst">
+        <h1>Contact Us</h1>
+        <p>
+          Discover a wealth of insightful materials meticulously crafted to provide you with a comprehensive understanding of the latest trends.
+        </p>
+      </div>
+
+      <div class="onesecond">
+        <a href="#">Home</a>
+        <span class="arrow">›</span>
+        <span class="active">Contact</span>
+      </div>
+    </div>
+
+    <!-- Email / Career Section -->
+    <div class="Email_Career_Section">
+      <div class="Card">
+        <div class="Images">
+          <img src="./asset/mailweb.png" alt="">
+        </div>
+        <div class="Contant">
+          <h1>Email Us</h1>
+          <p>Please feel free to drop us a line. We will respond as soon as possible.</p>
+          <a href="#">Leave a message <span>→</span></a>
         </div>
       </div>
 
-      <!-- Email / Career Section -->
-      <div class="Email_Career_Section">
-        <div class="Card">
-          <div class="Images">
-            <img src="./asset/mailweb.png" alt="">
-          </div>
-          <div class="Contant">
-            <h1>Email Us</h1>
-            <p>Please feel free to drop us a line. We will respond as soon as possible.</p>
-            <a href="#">Leave a message <span>→</span></a>
-          </div>
+      <div class="Card">
+        <div class="Images">
+          <img src="./asset/carrerssweb.png" alt="">
         </div>
-
-        <div class="Card">
-          <div class="Images">
-            <img src="./asset/carrerssweb.png" alt="">
-          </div>
-          <div class="Contant">
-            <h1>Careers</h1>
-            <p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum</p>
-            <a href="#">Send an application <span>→</span></a>
-          </div>
+        <div class="Contant">
+          <h1>Careers</h1>
+          <p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum</p>
+          <a href="#">Send an application <span>→</span></a>
         </div>
       </div>
+    </div>
 
-
-    </div><!-- ✅ container ends here -->
+  </div>
+</section><!-- ✅ container ends here -->
 
     <!-- MAP (keep outside container if you want different width) -->
     <div class="map_box">
@@ -124,6 +133,126 @@ window.addEventListener("scroll", function(){
     </div>
       
     <hr class="custom-line">
+
+    <!-- Form section -->
+
+    <section class="consult-section">
+  <div class="consult-container">
+
+    <!-- LEFT -->
+    <div class="consult-left">
+      <h1>
+        Get Online<br />
+        Consultation
+      </h1>
+
+      <form class="form-grid">
+
+        <div class="field">
+          <label>First Name*</label>
+          <input type="text" placeholder="" />
+        </div>
+
+        <div class="field">
+          <label>Last Name*</label>
+          <input type="text" placeholder="" />
+        </div>
+
+        <div class="field">
+          <label>Email address*</label>
+          <input type="email" placeholder="" />
+        </div>
+
+        <div class="field">
+          <label>Specialist*</label>
+          <div class="input-icon">
+            <select>
+              <option selected>Choose a specialist</option>
+              <option>Choose a specialist</option>
+              <option>Exotic Cuisien</option>
+              <option>French Desserts</option>
+              <option>Choose a specialist</option>
+            </select>
+            <span class="icon chevron"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Date*</label>
+          <div class="input-icon">
+            <input type="text" placeholder="dd-mm-yyyy" />
+            <span class="icon calendar"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Time*</label>
+          <div class="input-icon">
+            <input type="text" placeholder="--:--" />
+            <span class="icon clock"></span>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="SignUpp">Make an appointment</button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="consult-right">
+      <img src="./asset/office.png" alt="Office" />
+    </div>
+
+  </div>
+</section>
+ 
+<!-- Office Section -->
+
+<section class="office-section">
+  <div class="office-wrap">
+
+    <!-- Row 1 -->
+    <div class="office-title">
+      <h2>Pune Head<br>Office</h2>
+    </div>
+
+    <div class="office-address">
+      <p>
+        4292 Mapleview Drive<br>
+        Greenfield Zip code<br>
+        38230
+      </p>
+    </div>
+
+    <div class="office-contact">
+      <a class="email" href="mailto:headoffice@symposium.com">headoffice@symposium.com</a>
+      <a class="phone" href="tel:7316215503">Call 731-621-5503</a>
+    </div>
+
+    <hr class="office-line">
+
+    <!-- Row 2 -->
+    <div class="office-title">
+      <h2>Bengaluru<br>Office</h2>
+    </div>
+
+    <div class="office-address">
+      <p>
+        3502 Marcus Street<br>
+        Geraldine Zip code<br>
+        35974
+      </p>
+    </div>
+
+    <div class="office-contact">
+      <a class="email" href="mailto:office@symposium.com">Office@symposium.com</a>
+      <a class="phone" href="tel:7312357993">Call 731-235-7993</a>
+    </div>
+
+  </div>
+</section>
 
     
  
