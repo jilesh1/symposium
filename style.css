@@ -624,7 +624,7 @@ hr {
 
 
 
-/* MAP (you said ignore alignment, still making it responsive) */
+/* dMAP (you said ignore alignment, still making it responsive) */
 .map_box{
   margin-top: 40px;
   width: min(1200px, 100%);
