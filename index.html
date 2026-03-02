@@ -1,127 +1,244 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documen</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="CSS/anant.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Symposium</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="CSS/anant.css" />
+    <link rel="shortcut icon" href="https://png.pngtree.com/png-vector/20230527/ourmid/pngtree-s-logo-icon-vector-png-image_7111071.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="overlay" onclick="closeMenu()"></div>
+    <nav class="navbar">
+      <div>
+        <img src="asset/footer-logo-white.svg" alt="logo" />
+      </div>
 
-
-<div class="overlay" onclick="closeMenu()"></div>
-<nav class="navbar">
-
-   
-    <div>
-        <img src="asset/footer-logo-white.svg" alt="logo">
-    </div>
-
- 
-   
-
-   
-    <div class="list">
+      <div class="list">
         <ul>
-            <li><a href="index.html">HomePage</a></li>
-            <li><a href="Schedules.html">Schedules</a></li>
-            <li><a href="#">Speaker</a></li>
-            <li class="dropdown">
+          <li><a href="index.html">HomePage</a></li>
+          <li><a href="Schedules.html">Schedules</a></li>
+          <li><a href="#">Speaker</a></li>
+          <li class="dropdown">
             <a href="#">Blog <span class="caret">▼</span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Blog list</a></li>
               <li><a href="#">Blog details</a></li>
             </ul>
           </li>
-            <li><a href="contact.html">Contact</a></li>
-            
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-    </div>
+      </div>
 
-   <img class="white" src="asset/white.svg" alt="--">
-    <div class="hamburger" onclick="openMenu()">☰</div>
-    <div class="buttons">
-        
+      <img class="white" src="asset/white.svg" alt="--" />
+      <div class="hamburger" onclick="openMenu()">☰</div>
+      <div class="buttons">
         <button class="SignIn">Sign In</button>
         <button class="SignUp">Sign Up</button>
-    </div>
+      </div>
+    </nav>
+    <!-- Home Page Content -->
+    <main>
+      <div class="main1">
+        <h1>User experience conference</h1>
+        <p>
+          We offer you a new generation of task and project management system.
+          Plan, manage and track.
+        </p>
+      <div>  <button><i class="ri-coupon-3-fill"></i> Buy access pass</button>
+        <button><i class="ri-calendar-line"></i> Add to calender</button></div>
+      </div>
+      <div class="main2">
+        <img
+          src="https://themewagon.github.io/symposium-nextjs/images/ThumbnailSlider/Slider_3.png"
+          alt="image"
+        />
+        <img
+          src="https://themewagon.github.io/symposium-nextjs/images/ThumbnailSlider/Slider_3.png"
+          alt="image2"
+        />
 
-</nav>
-<!-- Home Page Content -->
- <main>
-    
- </main>
+        <h1>Best Online and Offline Conferences</h1>
+        <p>
+          Sometimes by accident, sometimes chunks as necessary making this the
+          first true generator on the Internet. recently with desktop publishing
+          software like Aldus PageMaker
+        </p>
+        <button>Upcoming conferences</button>
+      </div>
+      <div class="main3">
+        <div class="speakers">
+          <h1>World Class Speakers</h1>
+          <div class="img">
+            <img
+              src="	https://themewagon.github.io/symposium-nextjs/images/world-class-speakers/speakers_1.png"
+              alt="Speaker Darrell"
+            />
+            <h5>Darrell Steward</h5>
+            <p>Designation</p>
+          </div>
+          <div class="img">
+            <img
+              src="	https://themewagon.github.io/symposium-nextjs/images/world-class-speakers/speakers_2.png"
+              alt="Speaker"
+            />
+            <h5>Darrell Steward</h5>
+            <p>Designation</p>
+          </div>
+          <div class="img">
+            <img
+              src="	https://themewagon.github.io/symposium-nextjs/images/world-class-speakers/speakers_3.png"
+              alt="Speaker"
+            />
+            <h5>Darrell Steward</h5>
+            <p>Designation</p>
+          </div>
+          <div class="img">
+            <img
+              src="https://themewagon.github.io/symposium-nextjs/images/world-class-speakers/speakers_4.png"
+              alt="Speaker"
+            />
+            <h5>Darrell Steward</h5>
+            <p>Designation</p>
+          </div>
+          <div class="img">
+            <img
+              src="https://themewagon.github.io/symposium-nextjs/images/world-class-speakers/speakers_5.png"
+              alt="Speaker"
+            />
+            <h5>Darrell Steward</h5>
+            <p>Designation</p>
+          </div>
+        </div>
+            <div class="m3Bottom">
+                <h3>The Biggest Event in 2026</h3>
+                <p>Sometimes by accident, sometimes chunks as necessary making this the first true generator on the Internet. recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
 
+                <div class="m3bImage">
+                    <div><img src="https://themewagon.github.io/symposium-nextjs/images/event-ticket/ticket.png" alt="ticket"></div>
+                    <div>
+                        <h4>Ticket Prices</h4>
+                        <h4>$100</h4><p>Early birds</p><p>Until May 20,2026</p>
+                        <h4>$150</h4><p>Late birds</p><p>After May 20,2026</p>
+                        <button>Book Ticket</button>
+                    </div>
+                </div>
+            </div>
+      </div>
+      <div class="main4">
+        <h3>Previous Year Highlights</h3>
+        <p>Many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form injected humour, or randomised words</p>
+        <div><h4>10k+</h4><p>Ticket Confirmed</p></div>
+        <div><h4>16</h4><p>Partners</p></div>
+        <div><h4>150k+</h4><p>Participants</p></div>
+        <img src="https://themewagon.github.io/symposium-nextjs/images/highlight/slide-1.png" alt="">
+      </div>
+      <div class="main5">
+        <h4>Upcoming Conference</h4>
 
+        <div><h3>16</h3><p>JUN 2026</p></div>
+        <div><h3>17</h3><p>JUN 2026</p></div>
 
-<script>
-function openMenu(){
-    document.querySelector(".list").classList.add("active");
-    document.querySelector(".buttons").classList.add("active");
-    document.querySelector(".overlay").classList.add("active");
-}
+        <div class="m5Bottom">
+            <h3>The Conference Construct Millennial</h3>
+            <img src="	https://themewagon.github.io/symposium-nextjs/images/upcoming/profile-1.png" alt="">
+            <img src="https://themewagon.github.io/symposium-nextjs/images/upcoming/profile-3.png" alt="">
+            <p>Speech by</p>
+            <p>Reena John & Lorance</p>
+            <button>Book Ticket</button>
+            <hr>
+            <h3>Local Businees Global Event</h3>
+            <img src="https://themewagon.github.io/symposium-nextjs/images/upcoming/profile-3.png" alt="">
+            <p>Speech by</p>
+            <p>Martin Luther</p>
+            <button>Book Ticket</button>
+        </div>
+      </div>
+      <div class="main6">
+        <h3>What Our Attendees Say</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut iusto quaerat nisi consequatur perferendis, necessitatibus porro dicta temporibus neque vero, dolorem voluptates, voluptatibus ipsum numquam.</p>
 
-function closeMenu(){
-    document.querySelector(".list").classList.remove("active");
-    document.querySelector(".buttons").classList.remove("active");
-    document.querySelector(".overlay").classList.remove("active");
-}
+        <div class="attendees">
+            <img src="	https://themewagon.github.io/symposium-nextjs/images/testimonials/testimonials-profile.png" alt="Jordan">
+            <p>Jordan Daniyel</p>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+        </div>
+      </div>
+    </main>
 
-window.addEventListener("scroll", function(){
+    <script>
+      function openMenu() {
+        document.querySelector(".list").classList.add("active");
+        document.querySelector(".buttons").classList.add("active");
+        document.querySelector(".overlay").classList.add("active");
+      }
 
-    const navbar = document.querySelector(".navbar");
+      function closeMenu() {
+        document.querySelector(".list").classList.remove("active");
+        document.querySelector(".buttons").classList.remove("active");
+        document.querySelector(".overlay").classList.remove("active");
+      }
 
-    if(window.scrollY > 50){
-        navbar.classList.add("scrolled");
-    }else{
-        navbar.classList.remove("scrolled");
-    }
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
 
-});
-
-</script>
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
     <!-- footer -->
-<footer>
-    <div class="footertop">
-        <img class="ticket" src="asset/ticket.png" alt="logo">
+    <footer>
+      <div class="footertop">
+        <img class="ticket" src="asset/ticket.png" alt="logo" />
 
         <div class="footert">
-            <h1>Become a Part of the Digital Evolution!</h1>
-            <button>Book ticket</button>
+          <h1>Become a Part of the Digital Evolution!</h1>
+          <button>Book ticket</button>
         </div>
-    </div>
-    <div style="background-color: #0f2235;">
-<div class="MainFooter">
-         
-    <img  src="asset/footer-logo-white.svg" alt="logo">
-    <div class="footerlist">
-        <ul>
-            <li><a href="index.html">HomePage</a></li>
-            <li><a href="">Schedules</a></li>
-            <li><a href="#">Speaker</a></li>
-             <li><a href="#">Speaker</a></li>
-            
-        </ul>
-    </div>
-    <div >
-        <img src="asset/1.svg" alt="logo">
-        <img src="asset/2.svg" alt="logo">
-        <img src="asset/3.svg" alt="logo">
-    </div>
-  
- </div>
- <hr>
- <div  class="footerend">
-    <div><p>© All rights reserved. Made by HTML/CSS Templates Distributed by Jilesh Yadav</p></div>
-    <div class="footersubs">
-        <div><h3>Subscribe Newsletter</h3></div>
-        <div><input type="email" placeholder="Email Address*"> <button>Click</button></div>
-        
-    </div>
-</div>
- </div>
-</footer>
-    
-</body>
+      </div>
+      <div style="background-color: #0f2235">
+        <div class="MainFooter">
+          <img src="asset/footer-logo-white.svg" alt="logo" />
+          <div class="footerlist">
+            <ul>
+              <li><a href="index.html">HomePage</a></li>
+              <li><a href="">Schedules</a></li>
+              <li><a href="#">Speaker</a></li>
+              <li><a href="#">Speaker</a></li>
+            </ul>
+          </div>
+          <div>
+            <img src="asset/1.svg" alt="logo" />
+            <img src="asset/2.svg" alt="logo" />
+            <img src="asset/3.svg" alt="logo" />
+          </div>
+        </div>
+        <hr />
+        <div class="footerend">
+          <div>
+            <p>
+              © All rights reserved. Made by HTML/CSS Templates Distributed by
+              Jilesh Yadav
+            </p>
+          </div>
+          <div class="footersubs">
+            <div><h3>Subscribe Newsletter</h3></div>
+            <div>
+              <input type="email" placeholder="Email Address*" />
+              <button>Click</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

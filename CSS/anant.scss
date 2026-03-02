@@ -1,0 +1,45 @@
+* {
+  color: #fff;
+}
+@mixin flex-layout($gap: 0px) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+main {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  .main1 {
+    @include flex-layout(1.3rem);
+    width: 100%;
+    h1 {
+      width: 100%;
+      font-size: 44px;
+    }
+    p {
+      font-size: 18px;
+      color: #ffffff9d;
+    }
+    div {
+      display: flex;
+      gap: 1rem;
+      button {
+        width: fit-content;
+        color: white;
+        background-color: #2f72f3;
+        padding: 15px 10px;
+        font-size: 1.3rem;
+        border: 1px solid #2f72f3;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+  .main2{
+    width: 100%;
+    img{
+        width: 100%;
+        @include flex-layout(1rem);
+    }
+  }
+}
