@@ -4,73 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Symposium</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="CSS/anant.css" />
-    <link rel="shortcut icon" href="https://png.pngtree.com/png-vector/20230527/ourmid/pngtree-s-logo-icon-vector-png-image_7111071.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="https://png.pngtree.com/png-vector/20230527/ourmid/pngtree-s-logo-icon-vector-png-image_7111071.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="overlay" onclick="closeMenu()"></div>
-    <nav class="navbar">
-      <div>
-        <img src="asset/footer-logo-white.svg" alt="logo" />
-      </div>
-
-      <div class="list">
-        <ul>
-          <li><a href="index.html">HomePage</a></li>
-          <li><a href="Schedules.html">Schedules</a></li>
-          <li><a href="#">Speaker</a></li>
-          <li class="dropdown">
-            <a href="#">Blog <span class="caret">▼</span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Blog list</a></li>
-              <li><a href="#">Blog details</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-
-      <img class="white" src="asset/white.svg" alt="--" />
-      <div class="hamburger" onclick="openMenu()">☰</div>
-      <div class="buttons">
-        <button class="SignIn">Sign In</button>
-        <button class="SignUp">Sign Up</button>
-      </div>
-    </nav>
     <!-- Home Page Content -->
     <main>
       <div class="main1">
-        <h1>User experience conference</h1>
-        <p>
-          We offer you a new generation of task and project management system.
-          Plan, manage and track.
-        </p>
-      <div>  <button><i class="ri-coupon-3-fill"></i> Buy access pass</button>
-        <button><i class="ri-calendar-line"></i> Add to calender</button></div>
+        <div class="m1Text">
+          <p>Starts on 16 June 2026</p>
+          <h1>User experience conference</h1>
+          <p>
+            We offer you a new generation of task and project management system.
+            Plan, manage and track.
+          </p>
+        </div>
+        <div>
+          <button><i class="ri-coupon-3-fill"></i> Buy access pass</button>
+          <button><i class="ri-calendar-line"></i> Add to calender</button>
+        </div>
       </div>
       <div class="main2">
-        <img
-          src="https://themewagon.github.io/symposium-nextjs/images/ThumbnailSlider/Slider_3.png"
-          alt="image"
-        />
-        <img
-          src="https://themewagon.github.io/symposium-nextjs/images/ThumbnailSlider/Slider_3.png"
-          alt="image2"
-        />
-
-        <h1>Best Online and Offline Conferences</h1>
-        <p>
-          Sometimes by accident, sometimes chunks as necessary making this the
-          first true generator on the Internet. recently with desktop publishing
-          software like Aldus PageMaker
-        </p>
-        <button>Upcoming conferences</button>
+        <div class="m2Img">
+          <img
+            src="https://themewagon.github.io/symposium-nextjs/images/ThumbnailSlider/Slider_3.png"
+            alt="image"
+          />
+          <div class="slider">
+            <img
+              class="small"
+              src="https://themewagon.github.io/symposium-nextjs/images/ThumbnailSlider/Slider_3.png"
+              alt="image2"
+            />
+            <img
+              class="small"
+              src="https://themewagon.github.io/symposium-nextjs/images/ThumbnailSlider/Slider_3.png"
+              alt="image2"
+            />
+            <img
+              class="small"
+              src="https://themewagon.github.io/symposium-nextjs/images/ThumbnailSlider/Slider_3.png"
+              alt="image2"
+            />
+            <img
+              class="small"
+              src="https://themewagon.github.io/symposium-nextjs/images/ThumbnailSlider/Slider_3.png"
+              alt="image2"
+            />
+            <img
+              class="small"
+              src="https://themewagon.github.io/symposium-nextjs/images/ThumbnailSlider/Slider_3.png"
+              alt="image2"
+            />
+          </div>
+        </div>
+        <div class="m2text">
+          <h1>Best Online and Offline Conferences</h1>
+          <p>
+            Sometimes by accident, sometimes chunks as necessary making this the
+            first true generator on the Internet. recently with desktop
+            publishing software like Aldus PageMaker
+          </p>
+          <button>Upcoming conferences</button>
+        </div>
       </div>
       <div class="main3">
+        <h1>World Class Speakers</h1>
         <div class="speakers">
-          <h1>World Class Speakers</h1>
           <div class="img">
             <img
               src="	https://themewagon.github.io/symposium-nextjs/images/world-class-speakers/speakers_1.png"
@@ -112,22 +122,43 @@
             <p>Designation</p>
           </div>
         </div>
-            <div class="m3Bottom">
-                <h3>The Biggest Event in 2026</h3>
-                <p>Sometimes by accident, sometimes chunks as necessary making this the first true generator on the Internet. recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+        <div class="m3Bottom">
+          <h3>The Biggest Event in 2026</h3>
+          <p>
+            Sometimes by accident, sometimes chunks as necessary making this the
+            first true generator on the Internet. recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem
+            Ipsum was popularised in the 1960s with the release of Letraset
+            sheets containing Lorem Ipsum passages.
+          </p>
 
-                <div class="m3bImage">
-                    <div><img src="https://themewagon.github.io/symposium-nextjs/images/event-ticket/ticket.png" alt="ticket"></div>
-                    <div>
-                        <h4>Ticket Prices</h4>
-                        <h4>$100</h4><p>Early birds</p><p>Until May 20,2026</p>
-                        <h4>$150</h4><p>Late birds</p><p>After May 20,2026</p>
-                        <button>Book Ticket</button>
-                    </div>
-                </div>
+          <div class="m3bImage">
+            <div>
+              <img
+                src="https://themewagon.github.io/symposium-nextjs/images/event-ticket/ticket.png"
+                alt="ticket"
+              />
             </div>
+            <div>
+              <div class="m3bText">
+                <h4>Ticket Prices</h4>
+                <div>
+                  <h5>$100</h5>
+                  <p>Early birds</p>
+                </div>
+                <p>Until May 20,2026</p>
+                <div>
+                  <h5>$150</h5>
+                  <p>Late birds</p>
+                </div>
+                <p>After May 20,2026</p>
+                <button>Book Ticket</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="main4">
+      <!--  <div class="main4">
         <h3>Previous Year Highlights</h3>
         <p>Many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form injected humour, or randomised words</p>
         <div><h4>10k+</h4><p>Ticket Confirmed</p></div>
@@ -169,76 +200,7 @@
             <i class="ri-star-fill"></i>
             <i class="ri-star-fill"></i>
         </div>
-      </div>
+      </div> -->
     </main>
-
-    <script>
-      function openMenu() {
-        document.querySelector(".list").classList.add("active");
-        document.querySelector(".buttons").classList.add("active");
-        document.querySelector(".overlay").classList.add("active");
-      }
-
-      function closeMenu() {
-        document.querySelector(".list").classList.remove("active");
-        document.querySelector(".buttons").classList.remove("active");
-        document.querySelector(".overlay").classList.remove("active");
-      }
-
-      window.addEventListener("scroll", function () {
-        const navbar = document.querySelector(".navbar");
-
-        if (window.scrollY > 50) {
-          navbar.classList.add("scrolled");
-        } else {
-          navbar.classList.remove("scrolled");
-        }
-      });
-    </script>
-    <!-- footer -->
-    <footer>
-      <div class="footertop">
-        <img class="ticket" src="asset/ticket.png" alt="logo" />
-
-        <div class="footert">
-          <h1>Become a Part of the Digital Evolution!</h1>
-          <button>Book ticket</button>
-        </div>
-      </div>
-      <div style="background-color: #0f2235">
-        <div class="MainFooter">
-          <img src="asset/footer-logo-white.svg" alt="logo" />
-          <div class="footerlist">
-            <ul>
-              <li><a href="index.html">HomePage</a></li>
-              <li><a href="">Schedules</a></li>
-              <li><a href="#">Speaker</a></li>
-              <li><a href="#">Speaker</a></li>
-            </ul>
-          </div>
-          <div>
-            <img src="asset/1.svg" alt="logo" />
-            <img src="asset/2.svg" alt="logo" />
-            <img src="asset/3.svg" alt="logo" />
-          </div>
-        </div>
-        <hr />
-        <div class="footerend">
-          <div>
-            <p>
-              © All rights reserved. Made by HTML/CSS Templates Distributed by
-              Jilesh Yadav
-            </p>
-          </div>
-          <div class="footersubs">
-            <div><h3>Subscribe Newsletter</h3></div>
-            <div>
-              <input type="email" placeholder="Email Address*" />
-              <button>Click</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
