@@ -546,4 +546,57 @@ main .main6 .attendees i {
     border-top-right-radius: 167px;
     background-color: #47c4fe;
   }
+  main .main2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    place-items: center;
+  }
+  main .main2 .m2Img {
+    height: 80%;
+  }
+  main .main2 .m2Img .slider {
+    width: 80%;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    height: 20%;
+    scrollbar-width: thin;
+    cursor: grab;
+  }
+  main .main3 .speakers {
+    display: flex;
+  }
+  main .main3 .m3bImage {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  main .main3 .m3bImage > div:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0;
+  }
+  main .main3 .m3bImage > div:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0 !important;
+  }
+  main .main3 .m3bImage > div:last-child .m3bText {
+    border-radius: 20px;
+  }
+  main .main4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  main .main4 .m4Text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  main .main4 .m4Text .stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }/*# sourceMappingURL=anant.css.map */
