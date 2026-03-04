@@ -149,12 +149,12 @@ main .main1 .m1Text p:last-child {
   color: rgba(255, 255, 255, 0.4392156863);
   font-size: 1.2rem;
 }
-main .main1 > div {
+main .main1 .m1Text > div {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-main .main1 > div button {
+main .main1 .m1Text > div button {
   width: -moz-fit-content;
   width: fit-content;
   padding: 1rem 3rem;
@@ -165,12 +165,15 @@ main .main1 > div button {
   font-size: 1.2rem;
   font-weight: 600;
 }
-main .main1 > div > button:nth-child(2) {
+main .main1 .m1Text > div > button:nth-child(2) {
   background-color: #000;
   color: #3b82f6;
 }
-main .main1 > div > button:nth-child(2) i {
+main .main1 .m1Text > div > button:nth-child(2) i {
   color: #3b82f6;
+}
+main .main1 .images {
+  display: none;
 }
 main .main2 {
   background-color: #0c1b2c;
@@ -503,4 +506,44 @@ main .main6 .attendees P {
 }
 main .main6 .attendees i {
   color: goldenrod;
+}
+
+@media (min-width: 1000px) {
+  main .main1 {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1.3fr;
+    grid-template-areas: "m1left m1right";
+  }
+  main .main1 .m1Text {
+    grid-area: m1left;
+  }
+  main .main1 .m1Text .button {
+    display: flex;
+    flex-direction: row;
+  }
+  main .main1 .images {
+    position: relative;
+    grid-area: m1right;
+    display: grid;
+    gap: 1rem;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+  main .main1 .images .left {
+    position: absolute;
+    border-top-left-radius: 167px;
+    border-bottom-right-radius: 167px;
+    background-color: #3b82f6;
+    right: 1rem;
+  }
+  main .main1 .images .right {
+    left: 1rem;
+    top: -9rem;
+    position: absolute;
+    border-bottom-left-radius: 167px;
+    border-top-right-radius: 167px;
+    background-color: #47c4fe;
+  }
 }/*# sourceMappingURL=anant.css.map */
