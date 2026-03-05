@@ -10,7 +10,6 @@
   font-weight: 200;
   font-style: normal;
 }
-/* dskfsdj */
 
 .poppins-light {
   font-family: "Poppins", sans-serif;
@@ -510,12 +509,9 @@ main .main6 .attendees i {
 }
 
 @media (min-width: 1000px) {
-<<<<<<< HEAD
-=======
 
 
   /* v */
->>>>>>> 000ebc8 (All done)
   main .main1 {
     height: 100vh;
     display: grid;
@@ -606,9 +602,6 @@ main .main6 .attendees i {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-<<<<<<< HEAD
-}/*# sourceMappingURL=anant.css.map */
-=======
 }/*# sourceMappingURL=anant.css.map */
 
 .white{
@@ -624,6 +617,7 @@ main .main6 .attendees i {
     display: flex;
     justify-content: space-around;
     align-items: center;
+   background-color: #011120;
    
     padding: 15px;
 }
@@ -830,35 +824,32 @@ main .main6 .attendees i {
     }
 
     .list ul li a{
-       margin-left: 1.5rem;
+        text-align: center;
         display: block;
        
     }
 
     .buttons{
-         position: fixed;
-    right: -100%;
-    bottom: 25px;
-    width: 270px;
-    padding: 0 18px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    transition: right 0.3s ease;
-    z-index: 10000;
-    margin-left: 1.5rem;
+        position: fixed;
+        right: -250px;
+        top: 250px;
+        width: 250px;
+       
+        flex-direction: column;
+        background-color: #0f2235;
+        padding: 15px;
+        transition: right 0.3s ease;
+        z-index: 1000;
     }
 
     .buttons.active{
         right: 0;
     }
-    /* wdsdsaf */
 
-     .buttons button{
-    width: 100%;
-    padding: 12px 0;
-    font-size: 16px;
-  }
+    .buttons button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
     .MainFooter{
         grid-template-columns: 1fr 1fr ;
         gap: 30px;
@@ -889,9 +880,6 @@ main .main6 .attendees i {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     overflow: hidden; /* prevents overflow */
-}
-.footersubs button{
-    color: black;
 }
 .footert{
    
@@ -1013,4 +1001,3 @@ hr {
 
 
 }  
->>>>>>> 000ebc8 (All done)
