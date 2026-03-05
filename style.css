@@ -523,7 +523,7 @@ hr {
     }
 
     .buttons{
-         position: fixed;
+       position: fixed;
     right: -100%;
     bottom: 25px;
     width: 270px;
@@ -533,7 +533,6 @@ hr {
     gap: 12px;
     transition: right 0.3s ease;
     z-index: 10000;
-    margin-left: 1.5rem;
     }
 
     .buttons.active{
