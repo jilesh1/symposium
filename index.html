@@ -18,6 +18,35 @@
     />
   </head>
   <body>
+    <div class="overlay" onclick="closeMenu()"></div>
+    <nav class="navbar">
+      <div>
+        <img src="asset/footer-logo-white.svg" alt="logo" />
+      </div>
+
+      <div class="list">
+        <ul>
+          <li><a href="index.html">HomePage</a></li>
+          <li><a href="Schedules.html">Schedules</a></li>
+          <li><a href="#">Speaker</a></li>
+          <li class="dropdown">
+            <a href="#">Blog <span class="caret">▼</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Blog list</a></li>
+              <li><a href="#">Blog details</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <img class="white" src="asset/white.svg" alt="--" />
+      <div class="hamburger" onclick="openMenu()">☰</div>
+      <div class="buttons">
+        <button class="SignIn">Sign In</button>
+        <button class="SignUp">Sign Up</button>
+      </div>
+    </nav>
     <!-- Home Page Content -->
     <main>
       <div class="main1">
@@ -265,9 +294,77 @@
             <i class="ri-star-fill"></i>
             <i class="ri-star-fill"></i>
             <i class="ri-star-fill"></i>
-          </div>
         </div>
       </div>
     </main>
+
+    <script>
+      function openMenu() {
+        document.querySelector(".list").classList.add("active");
+        document.querySelector(".buttons").classList.add("active");
+        document.querySelector(".overlay").classList.add("active");
+      }
+
+      function closeMenu() {
+        document.querySelector(".list").classList.remove("active");
+        document.querySelector(".buttons").classList.remove("active");
+        document.querySelector(".overlay").classList.remove("active");
+      }
+
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+    <!-- footer -->
+    <footer>
+      <div class="footertop">
+        <img class="ticket" src="asset/ticket.png" alt="logo" />
+
+        <div class="footert">
+          <h1>Become a Part of the Digital Evolution!</h1>
+          <button>Book ticket</button>
+        </div>
+      </div>
+      <div style="background-color: #0f2235">
+        <div class="MainFooter">
+          <img src="asset/footer-logo-white.svg" alt="logo" />
+          <div class="footerlist">
+            <ul>
+              <li><a href="index.html">HomePage</a></li>
+              <li><a href="">Schedules</a></li>
+              <li><a href="#">Speaker</a></li>
+              <li><a href="#">Speaker</a></li>
+            </ul>
+          </div>
+          <div>
+            <img src="asset/1.svg" alt="logo" />
+            <img src="asset/2.svg" alt="logo" />
+            <img src="asset/3.svg" alt="logo" />
+          </div>
+        </div>
+        <hr />
+        <div class="footerend">
+          <div>
+            <p>
+              © All rights reserved. Made by HTML/CSS Templates Distributed by
+              Jilesh Yadav
+            </p>
+          </div>
+          <div class="footersubs">
+            <div><h3>Subscribe Newsletter</h3></div>
+            <div>
+              <input type="email" placeholder="Email Address*" />
+              <button>Click</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

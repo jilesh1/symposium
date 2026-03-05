@@ -488,112 +488,20 @@ main {
       }
       P {
         color: white;
-      }
-      i {
-        color: goldenrod;
+        background-color: #2f72f3;
+        padding: 15px 10px;
+        font-size: 1.3rem;
+        border: 1px solid #2f72f3;
+        border-radius: 0.5rem;
       }
     }
   }
-}
-
-// Responsive Design
-@media (min-width: 1000px) {
-  main {
-    .main1 {
-      height: 100vh;
-      display: grid;
-      place-items: center;
-      grid-template-columns: 1fr 1.3fr;
-      grid-template-areas: "m1left m1right";
-      .m1Text {
-        grid-area: m1left;
-        .button {
-          display: flex;
-          flex-direction: row;
-        }
-      }
-      .images {
-        position: relative;
-        grid-area: m1right;
-        display: grid;
-        gap: 1rem;
-        place-items: center;
-        grid-template-columns: 1fr 1fr;
-        .left {
-          position: absolute;
-          border-top-left-radius: 167px;
-          border-bottom-right-radius: 167px;
-          background-color: #3b82f6;
-          right: 1rem;
-        }
-        .right {
-          left: 1rem;
-          top: -9rem;
-          position: absolute;
-          border-bottom-left-radius: 167px;
-          border-top-right-radius: 167px;
-          background-color: #47c4fe;
-        }
-      }
-    }
-    .main2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 5rem;
-      place-items: center;
-      .m2Img {
-        height: 80%;
-        .slider {
-          width: 80%;
-          user-select: none;
-          height: 20%;
-          scrollbar-width: thin;
-          cursor: grab;
-        }
-      }
-    }
-    .main3 {
-      .speakers {
-        display: flex;
-        // border: 2px solid salmon;
-      }
-      .m3bImage {
-        width: 70%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        & > div:first-child {
-          border-top-left-radius: 20px;
-          border-bottom-left-radius: 20px; 
-          border-top-right-radius: 0 !important;
-          border-bottom-right-radius: 0;
-        }
-        & > div:last-child {
-          border-top-right-radius: 20px ;
-          border-bottom-left-radius: 0 !important;
-
-          // Now you can target the text inside
-          .m3bText {
-            border-radius: 20px; // This is the inner container
-          }
-        }
-      }  
-    }
-    .main4{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      .m4Text{
-        @include flex-layout(20px);
-        justify-content: center;
-        .stats{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-      }
-    }
-    .main5{
-      .m5Bottom{
-
-      }
+  .main2{
+    width: 100%;
+    img{
+        width: 100%;
+        @include flex-layout(1rem);
+        right: auto;
     }
   }
 }

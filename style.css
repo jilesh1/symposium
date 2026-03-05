@@ -465,6 +465,9 @@ hr {
      justify-content: space-around;
      grid-template-columns: 1fr 1fr;
 }
+.footersubs button{
+    color: black;
+}
 
 @media screen and (max-width:1100px){
 .navbar{
@@ -513,32 +516,34 @@ hr {
     }
 
     .list ul li a{
-        text-align: center;
+        margin-left: 1.5rem;
         display: block;
        
     }
 
     .buttons{
-        position: fixed;
-        right: -250px;
-        top: 250px;
-        width: 250px;
-       
-        flex-direction: column;
-        background-color: #0f2235;
-        padding: 15px;
-        transition: right 0.3s ease;
-        z-index: 1000;
+         position: fixed;
+    right: -100%;
+    bottom: 25px;
+    width: 270px;
+    padding: 0 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: right 0.3s ease;
+    z-index: 10000;
+    margin-left: 1.5rem;
     }
 
     .buttons.active{
         right: 0;
     }
 
-    .buttons button{
-        width: 100%;
-        margin-bottom: 10px;
-    }
+     .buttons button{
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+  }
      .Schedules{
         grid-template-columns: 1fr;
         gap: 15px;
