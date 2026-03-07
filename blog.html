@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog</title>
+<link rel="stylesheet" href="blogcss.css">
+</head>
+
+<body>
+ <div class="overlay" onclick="closeMenu()"></div>
+
+<nav class="navbar">
+
+   
+    <div>
+        <img src="asset/footer-logo-white.svg" alt="logo">
+    </div>
+
+ 
+   
+
+   
+    <div class="list">
+        <ul>
+             <li><a href="index.html">HomePage</a></li>
+            <li><a href="Schedules.html">Schedules</a></li>
+            <li><a href="#">Speaker</a></li>
+            <li class="dropdown">
+            <a href="#">Blog <span class="caret">▼</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="blog.html">Blog list</a></li>
+              <li><a href="blogview.html">Blog details</a></li>
+            </ul>
+          </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+   <img class="white" src="asset/white.svg" alt="--">
+    <div class="hamburger" onclick="openMenu()">☰</div>
+    <div class="buttons">
+        
+        <button class="SignIn">Sign In</button>
+        <button class="SignUp">Sign Up</button>
+    </div>
+
+</nav>
+
+<script>
+function openMenu(){
+    document.querySelector(".list").classList.add("active");
+    document.querySelector(".buttons").classList.add("active");
+    document.querySelector(".overlay").classList.add("active");
+}
+
+function closeMenu(){
+    document.querySelector(".list").classList.remove("active");
+    document.querySelector(".buttons").classList.remove("active");
+    document.querySelector(".overlay").classList.remove("active");
+}
+
+window.addEventListener("scroll", function(){
+
+    const navbar = document.querySelector(".navbar");
+
+    if(window.scrollY > 50){
+        navbar.classList.add("scrolled");
+    }else{
+        navbar.classList.remove("scrolled");
+    }
+
+});
+
+</script>
+<main>
+
+<div class="m1">
+
+<div class="m1h1">
+<h1>Blog</h1>
+</div>
+
+<div class="m1h2">
+
+<div class="m1h2content">
+<p>
+Discover a wealth of insightful materials meticulously
+crafted to provide you with a comprehensive understanding
+of the latest trends.
+</p>
+</div>
+
+<div class="m1h2nav">
+<h1>Home > <span>Blog</span></h1>
+</div>
+
+</div>
+</div>
+
+
+<div class="card_holder">
+
+<div class="card">
+<button class="card_button">Pricing</button>
+<img src="images/blog_3.png" alt="blog">
+<h1>Business from the brink of ruin by optimizing our website....</h1>
+<h2>22 May 2005</h2>
+</div>
+
+<div class="card">
+<button class="card_button">Pricing</button>
+<img src="images/blog_3.png" alt="blog">
+<h1>Business from the brink of ruin by optimizing our website....</h1>
+<h2>22 May 2005</h2>
+</div>
+
+<div class="card">
+<button class="card_button">Pricing</button>
+<img src="images/blog_3.png" alt="blog">
+<h1>Business from the brink of ruin by optimizing our website....</h1>
+<h2>22 May 2005</h2>
+</div>
+
+<div class="card">
+<button class="card_button">Pricing</button>
+<img src="images/blog_3.png" alt="blog">
+<h1>Business from the brink of ruin by optimizing our website....</h1>
+<h2>22 May 2005</h2>
+</div>
+
+<div class="card">
+<button class="card_button">Pricing</button>
+<img src="images/blog_3.png" alt="blog">
+<h1>Business from the brink of ruin by optimizing our website....</h1>
+<h2>22 May 2005</h2>
+</div>
+
+<div class="card">
+<button class="card_button">Pricing</button>
+<img src="images/blog_3.png" alt="blog">
+<h1>Business from the brink of ruin by optimizing our website....</h1>
+<h2>22 May 2005</h2>
+</div>
+
+</div>
+
+</main>
+<footer>
+    <div class="footertop">
+        <img class="ticket" src="asset/ticket.png" alt="logo">
+
+        <div class="footert">
+            <h1>Become a Part of the Digital Evolution!</h1>
+            <button>Book ticket</button>
+        </div>
+    </div>
+    <div style="background-color: #0f2235;">
+<div class="MainFooter">
+         
+    <img  src="asset/footer-logo-white.svg" alt="logo">
+    <div class="footerlist">
+        <ul>
+            <li><a href="index.html">HomePage</a></li>
+            <li><a href="Schedules.html">Schedules</a></li>
+            <li><a href="#">Speaker</a></li>
+             <li><a href="contact.html">Contact/a></li>
+            
+        </ul>
+    </div>
+    <div >
+        <img src="asset/1.svg" alt="logo">
+        <img src="asset/2.svg" alt="logo">
+        <img src="asset/3.svg" alt="logo">
+    </div>
+  
+ </div>
+ <hr>
+ <div  class="footerend">
+    <div><p>© All rights reserved. Made by HTML/CSS Templates Distributed by Jilesh Yadav</p></div>
+    <div class="footersubs">
+        <div><h3>Subscribe Newsletter</h3></div>
+        <div><input type="email" placeholder="Email Address*"> <button>Click</button></div>
+        
+    </div>
+</div>
+ </div>
+</footer>
+</body>
+</html>
