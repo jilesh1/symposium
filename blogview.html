@@ -5,75 +5,47 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Blog View</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="blogcss.css">
 </head>
 
 <body>
-     <div class="overlay" onclick="closeMenu()"></div>
+
+<div class="overlay" onclick="closeMenu()"></div>
 
 <nav class="navbar">
 
-   
-    <div>
-        <img src="asset/footer-logo-white.svg" alt="logo">
-    </div>
+<div>
+<img src="asset/footer-logo-white.svg">
+</div>
 
- 
-   
+<div class="list">
+<ul>
 
-   
-    <div class="list">
-        <ul>
-             <li><a href="index.html">HomePage</a></li>
-            <li><a href="Schedules.html">Schedules</a></li>
-            <li><a href="#">Speaker</a></li>
-            <li class="dropdown">
-            <a href="#">Blog <span class="caret">▼</span></a>
-            <ul class="dropdown-menu">
-              <li><a href="blog.html">Blog list</a></li>
-              <li><a href="blogview.html">Blog details</a></li>
-            </ul>
-          </li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
+<li><a href="index.html">HomePage</a></li>
+<li><a href="Schedules.html">Schedules</a></li>
+<li><a href="#">Speaker</a></li>
 
-   <img class="white" src="asset/white.svg" alt="--">
-    <div class="hamburger" onclick="openMenu()">☰</div>
-    <div class="buttons">
-        
-        <button class="SignIn">Sign In</button>
-        <button class="SignUp">Sign Up</button>
-    </div>
+<li class="dropdown">
+<a href="#">Blog ▼</a>
+<ul class="dropdown-menu">
+<li><a href="blog.html">Blog list</a></li>
+<li><a href="blogview.html">Blog details</a></li>
+</ul>
+</li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+</div>
+
+<div class="hamburger" onclick="openMenu()">☰</div>
+
+<div class="buttons">
+<button class="SignIn">Sign In</button>
+<button class="SignUp">Sign Up</button>
+</div>
 
 </nav>
-
-<script>
-function openMenu(){
-    document.querySelector(".list").classList.add("active");
-    document.querySelector(".buttons").classList.add("active");
-    document.querySelector(".overlay").classList.add("active");
-}
-
-function closeMenu(){
-    document.querySelector(".list").classList.remove("active");
-    document.querySelector(".buttons").classList.remove("active");
-    document.querySelector(".overlay").classList.remove("active");
-}
-
-window.addEventListener("scroll", function(){
-
-    const navbar = document.querySelector(".navbar");
-
-    if(window.scrollY > 50){
-        navbar.classList.add("scrolled");
-    }else{
-        navbar.classList.remove("scrolled");
-    }
-
-});
-
-</script>
 
 <main>
 
@@ -88,29 +60,26 @@ window.addEventListener("scroll", function(){
 
 <div class="uhprofile">
 
-<div class="uhimage">
-<img src="images/img4.png" alt="author">
-</div>
+<img src="images/img4.png">
 
-<div class="uhpdetails">
+<div>
 <h2>Silicaman</h2>
-<h2 style="font-weight:100;">Author</h2>
+<p>Author</p>
 </div>
 
 </div>
-</div>
 
+</div>
 
 <div class="img_holder">
-<img src="images/blog_3.png" alt="blog">
+<img src="images/blog_3.png">
 </div>
-
 
 <div class="blog_details">
 
 <div class="blog_writes">
 
-<h1>Main Heading & Points</h1>
+<h1>Main Heading</h1>
 
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
@@ -120,51 +89,9 @@ window.addEventListener("scroll", function(){
 <li>Lorem ipsum dolor sit amet consectetur.</li>
 </ul>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-<hr>
-
-<h1>Tags</h1>
-
-<ul>
-<li>Trends</li>
-<li>Design</li>
-<li>Research</li>
-</ul>
-
-<hr>
-
-<h1>Share</h1>
-
-<ul>
-<li>Facebook</li>
-<li>Twitter</li>
-<li>Linkedin</li>
-</ul>
-
 </div>
 
-
 <div class="sidebar_panel">
-
-<h2>Share</h2>
-
-<button>
-<img src="images/logo.png">
-<p>Facebook</p>
-</button>
-
-<button>
-<img src="images/logo.png">
-<p>Twitter</p>
-</button>
-
-<button>
-<img src="images/logo.png">
-<p>Linkedin</p>
-</button>
-
-<hr>
 
 <h2>Join our Newsletter</h2>
 
@@ -179,45 +106,19 @@ window.addEventListener("scroll", function(){
 </div>
 
 </main>
-<footer>
-    <div class="footertop">
-        <img class="ticket" src="asset/ticket.png" alt="logo">
+<script>
+    window.addEventListener("scroll", function(){
 
-        <div class="footert">
-            <h1>Become a Part of the Digital Evolution!</h1>
-            <button>Book ticket</button>
-        </div>
-    </div>
-    <div style="background-color: #0f2235;">
-<div class="MainFooter">
-         
-    <img  src="asset/footer-logo-white.svg" alt="logo">
-    <div class="footerlist">
-        <ul>
-            <li><a href="index.html">HomePage</a></li>
-            <li><a href="Schedules.html">Schedules</a></li>
-            <li><a href="#">Speaker</a></li>
-             <li><a href="contact.html">Contact/a></li>
-            
-        </ul>
-    </div>
-    <div >
-        <img src="asset/1.svg" alt="logo">
-        <img src="asset/2.svg" alt="logo">
-        <img src="asset/3.svg" alt="logo">
-    </div>
-  
- </div>
- <hr>
- <div  class="footerend">
-    <div><p>© All rights reserved. Made by HTML/CSS Templates Distributed by Jilesh Yadav</p></div>
-    <div class="footersubs">
-        <div><h3>Subscribe Newsletter</h3></div>
-        <div><input type="email" placeholder="Email Address*"> <button>Click</button></div>
-        
-    </div>
-</div>
- </div>
-</footer>
+    const navbar = document.querySelector(".navbar");
+
+    if(window.scrollY > 50){
+        navbar.classList.add("scrolled");
+    }else{
+        navbar.classList.remove("scrolled");
+    }
+
+});
+</script>
+
 </body>
 </html>
